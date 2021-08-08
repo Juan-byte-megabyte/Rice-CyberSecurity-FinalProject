@@ -34,15 +34,14 @@ The following vulnerabilities were identified on each target:
 _TODO: Include vulnerability scan results to prove the identified vulnerabilities._
 
 ### Exploitation
-_TODO: Fill out the details below. Include screenshots where possible._
 
 The Red Team was able to penetrate `Target 1` and retrieve the following confidential data:
 - Target 1
   - `flag1.txt`: b9bbcb33ellb80be759c4e844862482d
     - **Exploits Used**
       - WPScan to enumerate users of the Target 1 WordPress site
-        - wpscan --url http://192.168.1.110 --enumerate u
-        - ![alt text](https://github.com/Juan-byte-megabyte/Rice-CyberSecurity-FinalProject/blob/8655bc671393f7d27d9d25ac768909c31c3b8594/Images/Offense%20Images/wpscanusers.png)
+       - wpscan --url http://192.168.1.110 --enumerate u
+       - ![alt text](https://github.com/Juan-byte-megabyte/Rice-CyberSecurity-FinalProject/blob/8655bc671393f7d27d9d25ac768909c31c3b8594/Images/Offense%20Images/wpscanusers.png)
     - Targeting User Michael
       - Executed Hydra Brute Force Attack
         - The following command was performed:
