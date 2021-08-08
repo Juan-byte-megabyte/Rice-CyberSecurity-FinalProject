@@ -10,7 +10,7 @@
 Nmap scan results for each machine reveal the below services and OS details:
 
 $ nmap -A 192.168.1.0/24
-  ![alt text](https://github.com/Juan-byte-megabyte/Rice-CyberSecurity-FinalProject/blob/025ff3ea5bce6ebc05f03ac40339df8e13f8ed29/Images/Offense%20Images/nmapscanfortarget1.png)
+  - ![alt text](https://github.com/Juan-byte-megabyte/Rice-CyberSecurity-FinalProject/blob/5809680b4a9d44d4d4963528ca3bcff1116cee72/Images/Offense%20Images/nmap-ascan.png)
 
 This scan identifies the services below as potential points of entry:
 - Target 1
@@ -75,7 +75,7 @@ The Red Team was able to penetrate `Target 1` and retrieve the following confide
       - Captured flag3 Accessing MySQL database
         - Once having found wp-config.php and gaining access to the database credentials as Michael, MySQL was used to explore the database
         - the wp-config.php displayed DB_Password in plaintext
-        - Insert Picture
+        - ![alt text](https://github.com/Juan-byte-megabyte/Rice-CyberSecurity-FinalProject/blob/47ad8ccdf0e2d7a701b29fd857043666040aed6d/Images/Offense%20Images/wp-configphp.png)
         - flag3 was found in wp_posts table in the wordpress database.
         - Commands:
           - Connected to mysql: -u root -p R@v3nSecurity
@@ -96,12 +96,12 @@ The Red Team was able to penetrate `Target 1` and retrieve the following confide
         - Commands:
           - Connected to mysql: -u root -p R@v3nSecurity
           - SELECT ID, user_login, user_pass FROM wp_users;
-    - Insert picture
+        - ![alt text](https://github.com/Juan-byte-megabyte/Rice-CyberSecurity-FinalProject/blob/8325e679b7615499ce833972057be8bd7ba43068/Images/Offense%20Images/stevenhashedsql.png)
         - When I exported the hashes, I saved them individually as stevenhash.txt and michaelhash.txt and ran them against John the Ripper to crack the hashes.
           - Command:
             - john stevenhash.txt
-            - Insert Picture
             - john michaelhash.txt; the execution of performing the john the ripper kept on going; but we already had the password from the previous activity.
+            - [alt text](https://github.com/Juan-byte-megabyte/Rice-CyberSecurity-FinalProject/blob/33c3d21df349df89410d1cbbdf73db2f9914a7a7/Images/Offense%20Images/jtrstevenhash.png)
           - Once Steven’s password hash was cracked, the next thing to do was SSH as Steven. Then as Steven checking for privilege and escalating to root with Python
           - Command:
             - ssh steven@192.168.1.110
@@ -111,4 +111,4 @@ The Red Team was able to penetrate `Target 1` and retrieve the following confide
             - cd /root
             - ls
             - cat flag4.txt
-    - Insert Picture
+      - ![alt text](https://github.com/Juan-byte-megabyte/Rice-CyberSecurity-FinalProject/blob/33c3d21df349df89410d1cbbdf73db2f9914a7a7/Images/Offense%20Images/ravensteven.png)
