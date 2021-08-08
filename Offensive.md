@@ -10,7 +10,7 @@
 Nmap scan results for each machine reveal the below services and OS details:
 
 $ nmap -A 192.168.1.0/24
-  - ![alt text](https://github.com/Juan-byte-megabyte/Rice-CyberSecurity-FinalProject/blob/025ff3ea5bce6ebc05f03ac40339df8e13f8ed29/Images/Offense%20Images/nmapscanfortarget1.png)
+  ![alt text](https://github.com/Juan-byte-megabyte/Rice-CyberSecurity-FinalProject/blob/025ff3ea5bce6ebc05f03ac40339df8e13f8ed29/Images/Offense%20Images/nmapscanfortarget1.png)
 
 This scan identifies the services below as potential points of entry:
 - Target 1
@@ -85,7 +85,7 @@ The Red Team was able to penetrate `Target 1` and retrieve the following confide
           - select * from wp_posts;
    - ![alt text](https://github.com/Juan-byte-megabyte/Rice-CyberSecurity-FinalProject/blob/8a9ac76506c514988a6b20a129696a48ae0fc69e/Images/Offense%20Images/mysqlconnect.png)
    - ![alt text](https://github.com/Juan-byte-megabyte/Rice-CyberSecurity-FinalProject/blob/8a9ac76506c514988a6b20a129696a48ae0fc69e/Images/Offense%20Images/sqlshowdatabases.png)
-   - ![alt text] 
+   - ![alt text](https://github.com/Juan-byte-megabyte/Rice-CyberSecurity-FinalProject/blob/529d90d142b66a08b4e6ba5bd769230e43681dcd/Images/Offense%20Images/mysqlshowtables.png)
   - `flag4` : 715dea6c055b9fe3337544932f2941ce
     - **Exploit Used**
       - Use of weak password salted hashes and Python root escalation privileges
