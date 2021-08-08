@@ -9,10 +9,8 @@
 
 Nmap scan results for each machine reveal the below services and OS details:
 
-```bash
 $ nmap -A 192.168.1.0/24
-  - ![alt text] (https://github.com/Juan-byte-megabyte/Rice-CyberSecurity-FinalProject/blob/025ff3ea5bce6ebc05f03ac40339df8e13f8ed29/Images/Offense%20Images/nmapscanfortarget1.png)
-```
+  - ![alt text](https://github.com/Juan-byte-megabyte/Rice-CyberSecurity-FinalProject/blob/025ff3ea5bce6ebc05f03ac40339df8e13f8ed29/Images/Offense%20Images/nmapscanfortarget1.png)
 
 This scan identifies the services below as potential points of entry:
 - Target 1
