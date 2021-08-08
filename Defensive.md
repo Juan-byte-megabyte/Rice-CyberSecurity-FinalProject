@@ -40,7 +40,7 @@ The following machines were identified on the network:
 
 ### Description of Targets
 
-The target of this attack was: `Target 1` (TODO: IP Address).
+The target of this attack was: `Target 1` (192.168.1.110).
 
 Two VMs on the network were vulnerable to attack due to weak security implementation services and administration: Target 1 (192.168.1.110) and Target 2 (192.168.1.115). However, only Target 1 is covered and was attacked.
 
@@ -65,7 +65,7 @@ Insert Picture
 HTTP Request Size Monitor is implemented as follows:
   - **Metric**: WHEN sum() of http.request.bytes OVER all documents
   - **Threshold**: IS ABOVE 3500
-  - **Vulnerability Mitigated**: Code injection in HTTP requests (XSS and CRLF) or DDOS
+  - **Vulnerability Mitigated**: 
   - **Reliability**: TODO: Does this alert generate lots of false positives/false negatives? Rate as low, medium, or high reliability.
 Insert Picture
 
@@ -73,7 +73,7 @@ Insert Picture
 CPU Usage Monitor is implemented as follows:
   - **Metric**: WHEN max() OF system.process.cpu.total.pct OVER all documents
   - **Threshold**:IS ABOVE 0.5
-  - **Vulnerability Mitigated**: Malicious software, programs (malware or viruses) running taking up resources
+  - **Vulnerability Mitigated**: John the Ripper
   - **Reliability**: Low; False/Negative
 Insert Picture
 _TODO Note: Explain at least 3 alerts. Add more if time allows._
@@ -98,7 +98,7 @@ The logs and alerts generated during the assessment suggest that this network is
     - Adding a code snippet to your theme's functions.php file:
     - Insert Picture
     - Adding a code snippet to your site's root .htcaccess file (the file will need to be created if you don't originally have it setup)
-    - Insert Picture
+      - [alt text](https://github.com/Juan-byte-megabyte/Rice-CyberSecurity-FinalProject/blob/1761fd4ba0d784f4882f97b954fc0f2336e45f84/Images/Defense%20Images/WordPress%20UserEnumeration%20Step%201.png)
 - Vulnerability 3: Weak wp-config.php security implementation
   - Mitigation Techniques:
   - Setting up proper file security permissions within user files [4] & Protect the wp-config.php file with .htcaccess file [6]
