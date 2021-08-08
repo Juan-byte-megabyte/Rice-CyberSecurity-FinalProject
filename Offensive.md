@@ -29,8 +29,6 @@ The following vulnerabilities were identified on each target:
   - Use of weak password salted hashes
   - Python root escalation privileges
 
-_TODO: Include vulnerability scan results to prove the identified vulnerabilities._
-
 ### Exploitation
 
 The Red Team was able to penetrate `Target 1` and retrieve the following confidential data:
