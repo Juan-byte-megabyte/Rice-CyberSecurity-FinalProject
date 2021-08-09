@@ -1,4 +1,4 @@
-# Rice-CyberSecurity-FinalProject
+# Rice CyberSecurity FinalProject
 Offensive, Defensive and Mitigation Strategies
 
 ## The objective was to practice a number of different concepts learned throughout the cybersecurity bootcamp course and to act as a pentester and SOC analyst. 
