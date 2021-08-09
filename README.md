@@ -7,7 +7,7 @@ Offensive, Defensive and Mitigation Strategies
 
 - Implement alarms and thresholds in Elasticsearch Watcher
 
-- Use Wirewhark to analyze and find malicious activity on the network traffic
+- Use Wireshark to analyze and find malicious activity on the network traffic
 
 ## Read through the [Offensive](https://github.com/Juan-byte-megabyte/Rice-CyberSecurity-FinalProject/blob/21752aa38b96050bb0d921fddeb69eba76436973/Offensive.md), [Defense](https://github.com/Juan-byte-megabyte/Rice-CyberSecurity-FinalProject/blob/21752aa38b96050bb0d921fddeb69eba76436973/Defensive.md), and [Network Analysis](https://github.com/Juan-byte-megabyte/Rice-CyberSecurity-FinalProject/blob/21752aa38b96050bb0d921fddeb69eba76436973/Network%20Analysis.md)  files to see the work, process and findings that leads up to the final presentation.
 
