@@ -57,7 +57,7 @@ Excessive HTTP Errors is implemented as follows:
   - **Threshold**: IS ABOVE 400
   - **Vulnerability Mitigated**: Enumeration
   - **Reliability**: The alert is highly reliable. Measuring by error codes 400 and above will filter out any normal or successful responses. 400+ codes are client and server errors which are of more concern. Especially when considering these error codes going off at a high rate. It detected our wpscan.
-  - ![alt text](https://github.com/Juan-byte-megabyte/Rice-CyberSecurity-FinalProject/blob/62b6033f244f6954663f38c8222f81fa37fe6099/Images/Defense%20Images/ExcessiveHTTPerrors.png)
+  - ![alt text](https://github.com/Juan-byte-megabyte/Rice-CyberSecurity-FinalProject/blob/09a339d0bb808a4595caf6599e3e7585f9f50307/Images/Defense%20Images/newexvessiveHTTPErrors.png)
 
 
 #### HTTP Request Size Monitor
@@ -66,7 +66,7 @@ HTTP Request Size Monitor is implemented as follows:
   - **Threshold**: IS ABOVE 3500
   - **Vulnerability Mitigated**: Measurement of high traffic events; which could be an indicator of attack.
   - **Reliability**: This was highly reliable when John the Ripper was executed.
-  - ![alt text](https://github.com/Juan-byte-megabyte/Rice-CyberSecurity-FinalProject/blob/62b6033f244f6954663f38c8222f81fa37fe6099/Images/Defense%20Images/httprequestsizemonitor.png)
+  - ![alt text](https://github.com/Juan-byte-megabyte/Rice-CyberSecurity-FinalProject/blob/09a339d0bb808a4595caf6599e3e7585f9f50307/Images/Defense%20Images/newHTTPRSM.png)
 
 
 #### CPU Usage Monitor
@@ -75,7 +75,7 @@ CPU Usage Monitor is implemented as follows:
   - **Threshold**:IS ABOVE 0.5
   - **Vulnerability Mitigated**: John the Ripper
   - **Reliability**: Low and unreliable; the cpu usage monitor triggered even when not attacked.
-  - ![alt text](https://github.com/Juan-byte-megabyte/Rice-CyberSecurity-FinalProject/blob/62b6033f244f6954663f38c8222f81fa37fe6099/Images/Defense%20Images/cpuusage.png)
+  - ![alt text](https://github.com/Juan-byte-megabyte/Rice-CyberSecurity-FinalProject/blob/09a339d0bb808a4595caf6599e3e7585f9f50307/Images/Defense%20Images/CPUUsageMonitor.png)
 
 
 ### Suggestions for Going Further
