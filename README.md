@@ -13,4 +13,4 @@ Offensive, Defensive and Mitigation Strategies
 
 ## View the final Google slide project presentation [here](https://docs.google.com/presentation/d/1AIQkgs8JS7T9u3lxf8CfSoZSuVxXM0iFDlav2uM1AVg/edit?usp=sharing).
 
-Note: The presentation was created as a group with classmates. However, all other documentation for offensive, defensive and network analysis was my own personal work. We were only assigned to be a team to bring our findings together on the final day of our Cybersecurity Bootcamp.
+Note: The presentation was created as a group with classmates. We chose to cover the defensive side to cover: network topology, vulnerabilities/weaknesses, analyze alarms and thresholds in Elastic watcher (Kibana), and implement hardening methods. However, all other documentation for offensive, defensive and network analysis was my own personal work. We were only assigned to be a team to bring our findings together on the final day of our Cybersecurity Bootcamp.
