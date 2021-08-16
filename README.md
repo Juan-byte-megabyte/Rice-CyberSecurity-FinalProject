@@ -1,5 +1,5 @@
 # CyberSecurity Final Project
-## Offensive, Defensive and Mitigation Strategies
+## Offensive, Defensive/Mitigation Strategies and Network Forensic Analysis.
 
 ## The objective was to practice a number of different concepts learned throughout the cybersecurity bootcamp course and to act as a pentester and SOC analyst. 
 
